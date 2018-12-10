@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 48.5%; } }
+
+body {
+  background: #f8f9fb; }
+
+:root {
+  --color-primary: #49a597; }
+
+a {
+  color: gray; }
+
+a:visited,
+a:hover {
+  color: var(--color-primary); }
+
+p {
+  text-align: justify; }
+
+.container-fluid {
+  padding-top: 15px; }
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.6rem; }
+  .profile-card h1 {
+    font-size: 2rem;
+    font-weight: bold; }
+  .profile-card h3 {
+    font-size: 1.7rem;
+    color: gray; }
+
+.profile-image {
+  border: 2px solid gray;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 50%; }
+  .profile-image img {
+    width: 100%; }
+
+.contact-info {
+  padding-left: 0;
+  list-style: none;
+  color: gray; }
+  .contact-info i {
+    color: var(--color-primary);
+    margin-right: 5px; }
+
+.socials {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .socials li {
+    width: 25px;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary); }
+    .socials li:not(:last-child) {
+      margin-right: 5px; }
+  .socials a,
+  .socials a:active,
+  .socials a:visited {
+    color: #fff; }
+
+section:not(:last-child) {
+  margin-bottom: 10px; }
+
+section h6 {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  color: var(--color-primary); }
+
+section ul {
+  list-style: none;
+  font-size: 1.3rem;
+  padding-left: 0;
+  color: #505050; }
+  section ul li p:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold; }
+    @media screen and (max-width: 800px) {
+      section ul li p:first-of-type span:not(:first-child) {
+        display: none; } }
+  section ul li p:not(:first-of-type) {
+    padding-left: 1.5rem; }
+    @media screen and (max-width: 500px) {
+      section ul li p:not(:first-of-type) {
+        padding-left: 0; } }
+
+.skill p {
+  font-size: 12px; }
+
+.skill ul {
+  display: flex;
+  padding-left: 5px;
+  flex-wrap: wrap; }
+
+.skill li {
+  padding: 3px 5px;
+  background: #278a83;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
